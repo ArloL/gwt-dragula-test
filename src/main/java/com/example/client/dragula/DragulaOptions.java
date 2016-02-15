@@ -1,22 +1,21 @@
 package com.example.client.dragula;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
+import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
 @JsType
 public class DragulaOptions {
 
-	@JsonProperty
+	@JsProperty
 	public boolean copy;
 
-	@JsonProperty
+	@JsProperty
 	public boolean removeOnSpill;
 
-	@JsonProperty
+	@JsProperty
 	public boolean revertOnSpill;
 
-	@JsonProperty
+	@JsProperty
 	public boolean ignoreInputTextSelection;
 
 }
