@@ -70,10 +70,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <modules>
-                        <module>com.example.Gwt_dragula_test</module>
-                    </modules>
-                    <runTarget>Gwt_dragula_test.html</runTarget>
+                    <runTarget>index.html</runTarget>
                 </configuration>
             </plugin>
         </plugins>
