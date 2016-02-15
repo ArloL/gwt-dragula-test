@@ -1,6 +1,7 @@
 package com.example.client;
 
 import static com.example.client.browser.Document.getElementById;
+import static com.example.client.browser.Document.querySelector;
 import static com.example.client.dragula.Dragula.dragula;
 
 import com.example.client.dragula.Dragula;
@@ -12,7 +13,7 @@ public class GwtDragulaTestEntryPoint implements EntryPoint {
 	public void onModuleLoad() {
 		DragulaOptions dragulaOptions = new DragulaOptions();
 		dragulaOptions.copy = true;
-		Dragula dragula = dragula(getElementById("left-defaults"), dragulaOptions);
+		Dragula dragula = dragula(querySelector("#left-defaults"), dragulaOptions);
 		dragula.getContainers().push(getElementById("right-defaults"));
 	}
 
