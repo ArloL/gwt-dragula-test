@@ -9,9 +9,121 @@
     href="dragula-3.6.6/dragula.min.css"
     rel="stylesheet"
     type="text/css" />
+<style type="text/css">
+.container {
+	display: table-cell;
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 50%;
+}
+
+.container:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+/* * note that styling gu-mirror directly is a bad practice because it's too
+generic. * you're better off giving the draggable elements a unique class and
+styling that directly! */
+.container>div, .gu-mirror {
+	margin: 10px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: opacity 0.4s ease-in-out;
+}
+
+.container>div {
+	cursor: move;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+.gu-mirror {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.container .ex-moved {
+	background-color: #e74c3c;
+}
+
+.container.ex-over {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+	display: table-cell;
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 50%;
+}
+
+.container:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.2);
+} /* * note
+that styling gu-mirror directly is a bad practice because it's too generic. *
+you're better off giving the draggable elements a unique class and styling that
+directly! */
+.container>div, .gu-mirror {
+	margin: 10px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: opacity 0.4s ease-in-out;
+}
+
+.container>div {
+	cursor: move;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+.gu-mirror {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.container .ex-moved {
+	background-color: #e74c3c;
+}
+
+.container.ex-over {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+</style>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div
+        id="left-defaults"
+        class="container">
+        <div>You can move these elements between these two containers</div>
+        <div>Moving them anywhere else isn"t quite possible</div>
+        <div>
+            Anything can be moved around. That includes images, <a
+                href="https://github.com/bevacqua/dragula">links</a>, or any
+            other nested elements. <sub>(You can still click on links, as
+                usual!)</sub>
+        </div>
+    </div>
+    <div
+        id="right-defaults"
+        class="container">
+        <div>There"s also the possibility of moving elements around in the
+            same container, changing their position</div>
+        <div>This is the default use case. You only need to specify the
+            containers you want to use</div>
+        <div>More interactive use cases lie ahead</div>
+        <div>
+            Moving
+            <code>&lt;input/&gt;</code>
+            elements works just fine. You can still focus them, too. <input
+                placeholder="See?" />
+        </div>
+        <div>
+            Make sure to check out the <a
+                href="https://github.com/bevacqua/dragula#readme">documentation
+                on GitHub!</a>
+        </div>
+    </div>
     <script src="dragula-3.6.6/dragula.min.js"></script>
     <script src="gwtdragula/gwtdragula.nocache.js"></script>
 </body>
