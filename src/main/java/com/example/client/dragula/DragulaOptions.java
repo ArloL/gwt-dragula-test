@@ -1,4 +1,4 @@
-package com.example.client;
+package com.example.client.dragula;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

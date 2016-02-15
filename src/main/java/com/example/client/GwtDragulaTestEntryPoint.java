@@ -1,8 +1,10 @@
 package com.example.client;
 
-import static com.example.client.Document.getElementById;
-import static com.example.client.Dragula.dragula;
+import static com.example.client.browser.Document.getElementById;
+import static com.example.client.dragula.Dragula.dragula;
 
+import com.example.client.dragula.Dragula;
+import com.example.client.dragula.DragulaOptions;
 import com.google.gwt.core.client.EntryPoint;
 
 public class GwtDragulaTestEntryPoint implements EntryPoint {

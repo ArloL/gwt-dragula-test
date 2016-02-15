@@ -1,4 +1,7 @@
-package com.example.client;
+package com.example.client.dragula;
+
+import com.example.client.browser.Element;
+import com.example.client.browser.JsArray;
 
 import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsOverlay;
