@@ -8,7 +8,10 @@ import com.google.gwt.core.client.EntryPoint;
 public class GwtDragulaTestEntryPoint implements EntryPoint {
 
 	public void onModuleLoad() {
-		dragula(getElementById("left-defaults"), getElementById("right-defaults"));
+		DragulaOptions dragulaOptions = new DragulaOptions();
+		dragulaOptions.copy = true;
+		Dragula dragula = dragula(getElementById("left-defaults"), dragulaOptions);
+		dragula.getContainers().push(getElementById("right-defaults"));
 	}
 
 }
