@@ -13,7 +13,7 @@ public class GwtDragulaTestApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(GwtDragulaTestApplication.class, args);
 	}
-	
+
 	@RequestMapping("/")
 	String index() {
 		return "index";
